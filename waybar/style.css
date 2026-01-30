@@ -1,0 +1,66 @@
+* {
+font-family: "Inter", "JetBrainsMono Nerd Font", sans-serif;
+font-size: 14px;
+color: #e0e0e0;
+}
+
+window#waybar {
+    background: rgba(25, 25, 25, 0.85);
+    border-radius: 14px;
+    margin: 0 12px;
+    padding: 5px 18px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+#clock,
+#cpu,
+#memory,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#tray,
+#custom-hypr_button,
+#workspaces {
+padding: 6px 14px;
+margin: 3px 5px;
+border-radius: 16px;
+background: rgba(50, 50, 50, 0.8);
+transition: background 0.15s, box-shadow 0.15s;
+}
+
+#clock {
+background: rgba(60, 60, 60, 0.3);
+}
+
+#custom-hypr_button {
+margin-left: 10px;
+background: rgba(80, 80, 80, 0.9);
+}
+
+#workspaces button {
+padding: 0 10px;
+border-radius: 12px;
+margin: 0 3px;
+background: transparent;
+color: #9aa0a6;
+}
+
+#workspaces button.active {
+background: rgba(137, 180, 250, 0.5);
+color: #000;
+}
+
+#clock:hover,
+#cpu:hover,
+#memory:hover,
+#battery:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover,
+#tray:hover,
+#custom-hypr_button:hover,
+#workspaces button:hover {
+background: rgba(137, 180, 250, 0.5);
+box-shadow: 0 0 8px rgba(137, 180, 250, 0.6);
+}

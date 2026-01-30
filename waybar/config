@@ -1,0 +1,68 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 38,
+
+  "modules-left": ["custom/hypr_button"],
+  "modules-center": ["hyprland/workspaces", "clock"],
+  "modules-right": ["cpu", "memory", "battery", "bluetooth", "pulseaudio", "network", "tray"],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "disable-scroll": false
+  },
+
+  "clock": {
+    "format": "{:%a %b %d | %I:%M %p}",
+    "tooltip": false,
+    "interval": 5,
+    "on-click": "korganizer"
+  },
+
+  "cpu": {
+    "format": "CPU:  {usage}%",
+    "tooltip": true,
+    "on-click": "kitty --hold -e btop"
+  },
+
+  "memory": {
+    "format": "RAM:  {percentage}%  ({used}/{total}GB)",
+    "tooltip": true,
+    "on-click": "kitty --hold -e btop"
+  },
+
+  "battery": {
+    "format": "🔋  {percentage}%  |  {time}",
+    "tooltip": true
+  },
+
+  "bluetooth": {
+    "format": "  {num_connections}  devices",
+    "format-connected": "  {num_connections}  devices",
+    "format-on": " None",
+    "format-off": " Off",
+    "tooltip": true,
+    "on-click": "blueman-manager"
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-muted": "󰖁  Mute",
+    "tooltip": true,
+    "on-click": "pavucontrol"
+  },
+
+  "network": {
+    "format": "  {essid}  ({signalStrength}%)",
+    "format-disconnected": "󰤭  Offline",
+    "tooltip": true
+  },
+
+  "custom/hypr_button": {
+    "exec": "echo Hypr",
+    "on-click": "wofi --show drun",
+    "tooltip": "Open Apps",
+    "interval": 0
+  }
+}

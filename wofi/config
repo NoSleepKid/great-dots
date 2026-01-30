@@ -1,0 +1,12 @@
+show=drun
+prompt=Search
+width=700
+height=400
+location=center
+allow_images=true
+image_size=24
+insensitive=true
+columns=1
+layer=top
+term=kitty
+drun-sort=frequency
