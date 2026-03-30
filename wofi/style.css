@@ -1,43 +1,60 @@
 * {
-font-family: "JetBrainsMono Nerd Font";
-font-size: 14px;
+bg: #0b0f0b;
+bg-alt: #101610;
+fg: #e8ffe8;
+green: #1f6f3a;
+green-bright: #2dbd6e;
+border: #163a22;
 }
 
 window {
-    margin: 0px;
-    padding: 10px;
+    width: 700px;
+    border: 2px;
+    border-color: @border;
+    border-radius: 10px;
+    background-color: @bg;
+    padding: 12px;
+}
+
+mainbox {
+    spacing: 8px;
+}
+
+inputbar {
+    background-color: @bg-alt;
     border-radius: 8px;
-    background-color: rgba(20, 20, 20, 0.95);
-    border: 2px solid rgba(137, 180, 250, 0.9);
+    padding: 8px;
 }
 
-#input {
-margin: 5px;
-padding: 8px;
-border-radius: 6px;
-border: none;
-background-color: rgba(40, 40, 40, 0.95);
-color: #ffffff;
+entry {
+    placeholder: "Search";
+    text-color: @fg;
 }
 
-#outer-box {
-margin: 5px;
+listview {
+    lines: 10;
+    columns: 1;
+    spacing: 6px;
+    scrollbar: false;
 }
 
-#inner-box {
-margin: 5px;
+element {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: transparent;
+    text-color: @fg;
 }
 
-#entry {
-padding: 8px;
-border-radius: 6px;
+element selected {
+    background-color: @green;
+    text-color: #ffffff;
 }
 
-#entry:selected {
-background-color: rgba(137, 180, 250, 0.25);
+element-icon {
+    size: 24px;
 }
 
-#text {
-margin-left: 10px;
-color: #ffffff;
+element-text {
+    vertical-align: 0.5;
+    padding-left: 10px;
 }

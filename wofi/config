@@ -10,3 +10,5 @@ columns=1
 layer=top
 term=kitty
 drun-sort=frequency
+parse_search=true
+dynamic_lines=false

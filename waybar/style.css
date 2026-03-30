@@ -5,7 +5,7 @@ color: #e0e0e0;
 }
 
 window#waybar {
-    background: rgba(25, 25, 25, 0.85);
+    background: rgba(25, 25, 25, 1);
     border-radius: 14px;
     margin: 0 12px;
     padding: 5px 18px;
@@ -25,7 +25,7 @@ window#waybar {
 padding: 6px 14px;
 margin: 3px 5px;
 border-radius: 16px;
-background: rgba(50, 50, 50, 0.8);
+background: rgba(50, 50, 50, 50);
 transition: background 0.15s, box-shadow 0.15s;
 }
 
@@ -42,8 +42,8 @@ background: rgba(80, 80, 80, 0.9);
 padding: 0 10px;
 border-radius: 12px;
 margin: 0 3px;
-background: transparent;
-color: #9aa0a6;
+background: #3c4959;
+color: #99a7ba;
 }
 
 #workspaces button.active {
@@ -61,6 +61,6 @@ color: #000;
 #tray:hover,
 #custom-hypr_button:hover,
 #workspaces button:hover {
-background: rgba(137, 180, 250, 0.5);
+background: rgba(137, 180, 250, 0);
 box-shadow: 0 0 8px rgba(137, 180, 250, 0.6);
 }

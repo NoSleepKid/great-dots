@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 38,
+  "height": 45,
 
   "modules-left": ["custom/hypr_button"],
   "modules-center": ["hyprland/workspaces", "clock"],
@@ -23,13 +23,13 @@
   "cpu": {
     "format": "CPU:  {usage}%",
     "tooltip": true,
-    "on-click": "kitty --hold -e btop"
+    "on-click": "alacritty --hold -e btop"
   },
 
   "memory": {
     "format": "RAM:  {percentage}%  ({used}/{total}GB)",
     "tooltip": true,
-    "on-click": "kitty --hold -e btop"
+    "on-click": "alacritty --hold -e btop"
   },
 
   "battery": {
@@ -60,8 +60,8 @@
   },
 
   "custom/hypr_button": {
-    "exec": "echo Hypr",
-    "on-click": "wofi --show drun",
+    "exec": "echo Rofi",
+    "on-click": "rofi -show drun",
     "tooltip": "Open Apps",
     "interval": 0
   }
