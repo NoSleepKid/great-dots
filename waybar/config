@@ -2,6 +2,9 @@
   "layer": "top",
   "position": "top",
   "height": 45,
+  "spacing": 5,
+  "exclusive": true,
+  "passthrough": false,
 
   "modules-left": ["custom/hypr_button"],
   "modules-center": ["hyprland/workspaces", "clock"],
@@ -57,6 +60,12 @@
     "format": "  {essid}  ({signalStrength}%)",
     "format-disconnected": "󰤭  Offline",
     "tooltip": true
+  },
+
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10,
+    "show-passive-items": true
   },
 
   "custom/hypr_button": {
