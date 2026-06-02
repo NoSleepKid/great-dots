@@ -1,66 +1,62 @@
 * {
-font-family: "Inter", "JetBrainsMono Nerd Font", sans-serif;
-font-size: 14px;
-color: #e0e0e0;
+    font-family: "Inter", "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
 }
 
 window#waybar {
-    background: rgba(25, 25, 25, 1);
-    border-radius: 14px;
-    margin: 0 12px;
-    padding: 5px 18px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    background-color: rgba(30, 30, 46, 0.85);
+    border: 1px solid #313244;
+    border-radius: 12px;
+    color: #cdd6f4;
 }
 
-#clock,
-#cpu,
-#memory,
-#battery,
-#pulseaudio,
-#network,
-#bluetooth,
-#tray,
-#custom-hypr_button,
-#workspaces {
-padding: 6px 14px;
-margin: 3px 5px;
-border-radius: 16px;
-background: rgba(50, 50, 50, 50);
-transition: background 0.15s, box-shadow 0.15s;
+#workspaces, #clock, #cpu, #memory, #battery, #bluetooth, #pulseaudio, #network, #tray, #custom-hypr_button {
+    background-color: #313244;
+    padding: 2px 12px;
+    margin: 5px 2px;
+    border-radius: 8px;
 }
 
-#clock {
-background: rgba(60, 60, 60, 0.3);
-}
-
+/* Colors to keep it interesting */
 #custom-hypr_button {
-margin-left: 10px;
-background: rgba(80, 80, 80, 0.9);
+    color: #89b4fa;
+    font-size: 16px;
+    margin-left: 8px;
 }
+
+#clock { color: #cba6f7; font-weight: bold; }
+#cpu { color: #f38ba8; }
+#memory { color: #fab387; }
+#network { color: #a6e3a1; }
+#pulseaudio { color: #89dceb; }
 
 #workspaces button {
-padding: 0 10px;
-border-radius: 12px;
-margin: 0 3px;
-background: #3c4959;
-color: #99a7ba;
+    color: #6c7086;
 }
 
 #workspaces button.active {
-background: rgba(137, 180, 250, 0.5);
-color: #000;
+    color: #89b4fa;
+    background-color: #45475a;
 }
 
-#clock:hover,
-#cpu:hover,
-#memory:hover,
-#battery:hover,
-#pulseaudio:hover,
-#network:hover,
-#bluetooth:hover,
-#tray:hover,
-#custom-hypr_button:hover,
 #workspaces button:hover {
-background: rgba(137, 180, 250, 0);
-box-shadow: 0 0 8px rgba(137, 180, 250, 0.6);
+    background-color: rgba(137, 180, 250, 0.2);
+}
+#tray menu {
+    background-color: #1e1e2e;
+}
+#tray > .passive,
+#tray > .active,
+#tray > .needs-attention {
+    padding: 0 4px;
+}
+#tray > widget > image {
+}
+#tray {
+    margin-right: 10px;
+}
+#tray > widget > image {
+    padding: 0 6px;
 }

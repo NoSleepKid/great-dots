@@ -1,0 +1,9 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 60,
+    "width": 450,
+    "margin-bottom": 10,
+    "fixed-center": true,
+    "include": ["/home/sleep/.config/waybar/dock_modules.json"]
+}
